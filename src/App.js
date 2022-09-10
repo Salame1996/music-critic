@@ -1,4 +1,3 @@
-
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import {
@@ -74,10 +73,12 @@ function App() {
         setAlbums(data.items);
       });
   }
-console.log(albums);
+  console.log(albums);
   return (
     <div className="App">
-      <Container><ColorSchemesExample /></Container>
+      <Container>
+        <ColorSchemesExample />
+      </Container>
       <Container>
         <InputGroup className="mb-4" size="lg">
           <FormControl
@@ -95,24 +96,30 @@ console.log(albums);
       </Container>
       <Container>
         <Row className="mx-3 row row-cols-3">
-        {albums.map((album, i) => {
-return(<Card>
-  <Card.Img src={album.images[0].url} />
-  <Card.Link href={album.external_urls.spotify}>Listen</Card.Link>
-  <Card.Body>
-    <Card.Title>{album.name}</Card.Title>
-    <Rating />
-    <form><label htmlFor="exampleFormControlTextarea1">Write your review</label>
-    <textarea className="form-control" id="exampleFormControlTextarea1" rows="1"></textarea></form>
-    <br></br>
-    <button>Save</button>
-  </Card.Body>
-</Card>
-)
-
-
-        })}
-          
+          {albums.map((album, i) => {
+            return (
+              <Card>
+                <Card.Img src={album.images[0].url} />
+                <Card.Link href={album.external_urls.spotify} target="_blank">Listen</Card.Link>
+                <Card.Body>
+                  <Card.Title>{album.name}</Card.Title>
+                  <Rating />
+                  <form>
+                    <label htmlFor="exampleFormControlTextarea1">
+                      Write your review
+                    </label>
+                    <textarea
+                      className="form-control"
+                      id="exampleFormControlTextarea1"
+                      rows="1"
+                    ></textarea>
+                  </form>
+                  <br></br>
+                  <button>Save</button>
+                </Card.Body>
+              </Card>
+            );
+          })}
         </Row>
       </Container>
     </div>

@@ -20,7 +20,7 @@ import StarRatingComponent from 'react-star-rating-component';
     
     return (                
       <div>
-        <h4>Rating: {rating}</h4>
+        <p>Rating: {rating}</p>
         <StarRatingComponent 
           name="rate1" 
           renderStarIcon={() => <span>♫</span>}
