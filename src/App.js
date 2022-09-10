@@ -10,6 +10,7 @@ import {
   Card,
 } from "react-bootstrap";
 import { useState, useEffect } from "react";
+import ColorSchemesExample from "./components/Navbar";
 
 const CLIENT_ID = "187793585c46431fbdaa2d711ed725fc";
 const CLIENT_SECRET = "5285ea35a07743ff8c6203c33b824921";
@@ -75,6 +76,7 @@ function App() {
 console.log(albums);
   return (
     <div className="App">
+      <Container><ColorSchemesExample /></Container>
       <Container>
         <InputGroup className="mb-4" size="lg">
           <FormControl
@@ -97,8 +99,13 @@ return(<Card>
   <Card.Img src={album.images[0].url} />
   <Card.Body>
     <Card.Title>{album.name}</Card.Title>
+    <form><label for="exampleFormControlTextarea1">Write your review</label>
+    <textarea class="form-control" id="exampleFormControlTextarea1" rows="1"></textarea></form>
+    <br></br>
+    <button>Save</button>
   </Card.Body>
-</Card>)
+</Card>
+)
 
 
         })}
