@@ -8,7 +8,7 @@ function ColorSchemesExample() {
     <>
       <Navbar bg="primary" variant="dark">
         <Container>
-          <Navbar.Brand href="#home">CriticScale</Navbar.Brand>
+          <Navbar.Brand>CriticScale</Navbar.Brand>
           <Nav className="me-auto">
             <Nav.Link href="#features">Artist</Nav.Link>
             <Nav.Link href="#pricing">Albums</Nav.Link>

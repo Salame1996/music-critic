@@ -1,4 +1,4 @@
-import logo from "./logo.svg";
+
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import {
@@ -11,6 +11,7 @@ import {
 } from "react-bootstrap";
 import { useState, useEffect } from "react";
 import ColorSchemesExample from "./components/Navbar";
+import { Rating } from "./components/Rating";
 
 const CLIENT_ID = "187793585c46431fbdaa2d711ed725fc";
 const CLIENT_SECRET = "5285ea35a07743ff8c6203c33b824921";
@@ -83,7 +84,7 @@ console.log(albums);
             placeholder="Search Artist"
             type="input"
             onKeyPress={(event) => {
-              if (event.key == "Enter") {
+              if (event.key === "Enter") {
                 search();
               }
             }}
@@ -97,10 +98,12 @@ console.log(albums);
         {albums.map((album, i) => {
 return(<Card>
   <Card.Img src={album.images[0].url} />
+  <Card.Link href={album.external_urls.spotify}>Listen</Card.Link>
   <Card.Body>
     <Card.Title>{album.name}</Card.Title>
-    <form><label for="exampleFormControlTextarea1">Write your review</label>
-    <textarea class="form-control" id="exampleFormControlTextarea1" rows="1"></textarea></form>
+    <Rating />
+    <form><label htmlFor="exampleFormControlTextarea1">Write your review</label>
+    <textarea className="form-control" id="exampleFormControlTextarea1" rows="1"></textarea></form>
     <br></br>
     <button>Save</button>
   </Card.Body>
