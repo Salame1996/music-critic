@@ -20,8 +20,9 @@ import StarRatingComponent from 'react-star-rating-component';
     
     return (                
       <div>
-        <p>Rating: {rating}</p>
-        <StarRatingComponent 
+        <p>Rate: {rating}</p>
+        <p>↓↓↓</p>
+        <StarRatingComponent
           name="rate1" 
           renderStarIcon={() => <span>♫</span>}
           starCount={5}

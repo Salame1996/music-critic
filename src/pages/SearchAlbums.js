@@ -103,9 +103,9 @@ function SearchAlbum() {
         <Row className="mx-3 row row-cols-3">
           {albums.map((album, i) => {
             return (
-              <Card>
+              <Card bg='dark' style={{ color: 'green' }}>
                 <Card.Img src={album.images[0].url} />
-                <Card.Link href={album.external_urls.spotify} target="_blank">Listen</Card.Link>
+                <Card.Link href={album.external_urls.spotify} style={{ color: 'red' }} target="_blank">Listen</Card.Link>
                 <Card.Body>
                   <Card.Title>{album.name}</Card.Title>
                   <Rating />
