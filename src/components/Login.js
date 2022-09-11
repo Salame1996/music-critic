@@ -2,7 +2,7 @@ import {useEffect, useState} from "react";
 
 function Login () {
     const CLIENT_ID = "187793585c46431fbdaa2d711ed725fc"
-    const REDIRECT_URI = "http://localhost:3000"
+    const REDIRECT_URI = "https://music-critic.vercel.app/"
     const AUTH_ENDPOINT = "https://accounts.spotify.com/authorize"
     const RESPONSE_TYPE = "token"
 
