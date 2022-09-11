@@ -59,7 +59,7 @@ const UserCard = ({avatar,handle,reviewCount,location,memberDate}) => {
                 <hr />
                 <MDBCardText>{reviewCount} Reviews</MDBCardText>
                 <MDBBtn color="blue" rounded block size="lg">
-                  <MDBIcon far icon="clock me-2" /> View Profile
+                  <MDBIcon far icon="clock me-2"  /> View Profile
                 </MDBBtn>
               </MDBCardBody>
             </MDBCard>

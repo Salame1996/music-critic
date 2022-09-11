@@ -2,6 +2,10 @@ import React from 'react';
 import { MDBCol, MDBContainer, MDBRow, MDBCard, MDBCardText, MDBCardBody, MDBCardImage, MDBBtn, MDBTypography } from 'mdb-react-ui-kit';
 
 export default function UserProfile() {
+    const onButtonClickHandler = () => {
+        window.alert('Rating: ★★★★★     Review: This album always makes me very happy when i listen to it. I love the way the artist tackled on these instrumentals and the mixing was amazing.')
+      };
+
   return (
     <div className="gradient-custom-2" style={{ backgroundColor: '#black' }}>
       <MDBContainer className="py-5 h-100">
@@ -52,21 +56,21 @@ export default function UserProfile() {
                 </div>
                 <MDBRow>
                   <MDBCol className="mb-2">
-                    <MDBCardImage src="https://i.scdn.co/image/ab67616d0000b273e4251cf5331ad74eaaeca36e"
+                    <MDBCardImage onClick={onButtonClickHandler} src="https://i.scdn.co/image/ab67616d0000b273e4251cf5331ad74eaaeca36e"
                       alt="image 1" className="w-100 rounded-3" />
                   </MDBCol>
                   <MDBCol className="mb-2">
-                    <MDBCardImage src="https://i.scdn.co/image/ab67616d0000b2733ec3e0853e3b84dc64272647"
+                    <MDBCardImage onClick={onButtonClickHandler} src="https://i.scdn.co/image/ab67616d0000b2733ec3e0853e3b84dc64272647"
                       alt="image 1" className="w-100 rounded-3" />
                   </MDBCol>
                 </MDBRow>
                 <MDBRow className="g-2">
                   <MDBCol className="mb-2">
-                    <MDBCardImage src="https://i.scdn.co/image/ab67616d0000b27374dc897ea75402db37ef239a"
+                    <MDBCardImage onClick={onButtonClickHandler} src="https://i.scdn.co/image/ab67616d0000b27374dc897ea75402db37ef239a"
                       alt="image 1" className="w-100 rounded-3" />
                   </MDBCol>
                   <MDBCol className="mb-2">
-                    <MDBCardImage src="https://i.scdn.co/image/ab67616d0000b27301a481a3f593d3d74d6722cf"
+                    <MDBCardImage onClick={onButtonClickHandler} src="https://i.scdn.co/image/ab67616d0000b27301a481a3f593d3d74d6722cf"
                       alt="image 1" className="w-100 rounded-3" />
                   </MDBCol>
                 </MDBRow>
