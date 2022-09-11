@@ -6,14 +6,14 @@ import Login from "./Login";
 function ColorSchemesExample() {
   return (
     <>
-      <Navbar bg="primary" variant="dark">
+      <Navbar bg="succed" variant="dark">
         <Container>
-          <Navbar.Brand>CriticScale</Navbar.Brand>
+          <Navbar.Brand href="home" style={{ color: 'green' }}>♫ CriticScale ♫</Navbar.Brand>
           <Nav className="me-auto">
-            <Nav.Link href="#features">Artist</Nav.Link>
-            <Nav.Link href="#pricing">Albums</Nav.Link>
-            <Nav.Link href="#home"><Login /></Nav.Link>
+            <Nav.Link href="explore" style={{ color: 'green' }}> ♩ Explore ♩</Nav.Link>
+            <Nav.Link href="profile" style={{ color: 'green' }}> ♬ Profile ♬</Nav.Link>
           </Nav>
+          <Login href = "login" />
         </Container>
       </Navbar>
       <br></br>

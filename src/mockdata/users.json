@@ -1,0 +1,37 @@
+[
+    {
+      "avatar": "https://i.pinimg.com/originals/d6/c1/f7/d6c1f7a5494a8fa60ca419d791976de6.png",
+      "handle": "@SamuraiJack",
+      "reviewCount": 102,
+      "location": "Ancient Land",
+      "memberDate":"Member since 2021"
+    },
+    {
+      "avatar": "https://p.kindpng.com/picc/s/296-2963983_mf-doom-pin-hd-png-download.png",
+      "handle": "@MFDOOM",
+      "reviewCount": 32,
+      "location": "New York",
+      "memberDate":"Member since 2022"
+    },
+    {
+      "avatar": "https://w7.pngwing.com/pngs/304/990/png-transparent-shy-guy-mario-bros-luigi-s-mansion-mario-heroes-nintendo-video-game-thumbnail.png",
+      "handle": "@ShyGuy",
+      "reviewCount": 52,
+      "location": "Peach Castle",
+      "memberDate":"Member since 2022"
+    },
+    {
+        "avatar": "https://frikimaestro.com/wp-content/uploads/2020/11/MotoJojo.png",
+        "handle": "@MojoJojo",
+        "reviewCount": 72,
+        "location": "Ft-Lauderdale, FL",
+        "memberDate":"Member since 2022"
+      },
+      {
+        "avatar": "https://w7.pngwing.com/pngs/254/244/png-transparent-graphics-laboratory-cartoon-dexter-s-laboratory.png",
+        "handle": "@Dexter",
+        "reviewCount": 132,
+        "location": "Laboratory",
+        "memberDate":"Member since 2022"
+      }
+  ]
